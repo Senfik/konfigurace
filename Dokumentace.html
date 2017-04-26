@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semetrální práce</title>
+</head>
+<body>
+<header>
+    <h1>Dokumentace</h1>
+    <h2>Navigace</h2>
+    <ul>
+        <li>
+            <a href="#predmluva">Předmluva</a>
+        </li>
+        <li>
+            <a href="#popis">Popis</a>
+        </li>
+        <li>
+            <a href="#gameplay">Gameplay</a>
+        </li>
+        <li>
+            <a href="#interface">Interface</a>
+        </li>
+        <li>
+            <a href="#controls">Controls</a>
+        </li>
+        <li>
+            <a href="#audio">Audio</a>
+        </li>
+        <li>
+            <a href="#video">Video</a>
+        </li>
+        <li>
+            <a href="#zdroje">Zdroje</a>
+        </li>
+        <li>
+            <a href="https://github.com/Senfik/konfigurace">GitHub</a>
+        </li>
+
+    </ul>
+</header>
+<main>
+
+    <section id="predmluva">
+        <h2>Předmluva</h2>
+        <p>Dokumentace k semestrálnímu projektu pro značkovací jazyky.</p>
+    </section>
+
+    <section id="popis">
+        <h2>Popis hry Steel Division Normandy 1944</h2>
+        <p>Steel Division Normady 1944 je RTS (real time stragie), která se odehrává roku 1944 v normandii. Ve hře můžete hrát za skutečné divize, které byli nasazeny v 2. světové válce.</p>
+        <h3>Vypis xsd type</h3>
+        <ul>
+          <li>string - v xml tagu s tímto typem tagu bude očekáván textový řetězec</li>
+          <li>nonNegativeInteger - v xml tagu s tímto typem bude očekáváno pouze kladné celé číslo, nedokáže se dostat do záporných čísel</li>
+          <li>double - v xml tagu s tímto typem bude očekávána celá i necelá čísla </li>
+          <li>boolean - v xml tagu s tímto type budeme očekávat povolení nebo zakázaní  </li>
+        </ul>
+    </section>
+    <section id="gameplay">
+        <h2>Gameplay</h2>
+        <p>Nastavení hratelnosti.</p>
+        <table border="1">
+            <tr>
+            <td>Název</td>
+            <td>Type</td>
+            <td>Popis</td>
+            </tr>
+            <tr>
+                <td>Mouse Trape</td>
+                <td>xs:string</td>
+                <td>Jaký vzhled budou mít ikony ve hře</td>
+            </tr>
+            <tr>
+                <td>chat</td>
+                <td>xs:string</td>
+                <td>Povolit/zakázat zobrazení chatu</td>
+            </tr>
+            <tr>
+                <td>server</td>
+                <td>xs:string</td>
+                <td>Výběr zobrazení spojeneckých/nepřátelských jednotek</td>
+            </tr>
+            <tr>
+                <td>Language</td>
+                <td>xs:string</td>
+                <td>Nastavení jazyku hry</td>
+            </tr>
+            <tr>
+                <td>Auto Savep</td>
+                <td>xs:boolean</td>
+                <td>Povolit/zakázat zobrazení minimapy ve hře</td>
+            </tr>
+            <tr>
+                <td>Show unit name</td>
+                <td>xs:boolean</td>
+                <td>Povolit/zakázat zobrazení jmen jednotek ve hře</td>
+            </tr>
+            <tr>
+                <td>unit scaling</td>
+                <td>xs:double</td>
+                <td>Nastavení velikosti jednotek</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section id="interface">
+        <h2>Interface</h2>
+        <p>Nastavení herního rozhraní.</p>
+        <table border="1">
+            <tr>
+                <td>Název</td>
+                <td>Type</td>
+                <td>Popis</td>
+            </tr>
+            <tr>
+                <td>Icons Type</td>
+                <td>xs:string</td>
+                <td>Jaký vzhled budou mít ikony ve hře</td>
+            </tr>
+            <tr>
+                <td>Label size</td>
+                <td>xs:string</td>
+                <td>Možnost si vybrat velikost ikon i textu ve hře</td>
+            </tr>
+            <tr>
+                <td>Display Frontline</td>
+                <td>xs:string</td>
+                <td>Výběr zobrazení spojeneckých/nepřátelských jednotek</td>
+            </tr>
+            <tr>
+                <td>HUD size</td>
+                <td>xs:string</td>
+                <td>Výběr velikosti životů ve hře</td>
+            </tr>
+            <tr>
+                <td>Display Minimap</td>
+                <td>xs:boolean</td>
+                <td>Povolit/zakázat zobrazení minimapy ve hře</td>
+            </tr>
+            <tr>
+                <td>Show unit name</td>
+                <td>xs:boolean</td>
+                <td>Povolit/zakázat zobrazení jmen jednotek ve hře</td>
+            </tr>
+            <tr>
+                <td>unit scaling</td>
+                <td>xs:double</td>
+                <td>Nastavení velikosti jednotek</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="controls">
+        <h2>Controls</h2>
+        <p>Nastavení ovládání.</p>
+        <table border="1">
+            <tr>
+                <td>Název</td>
+                <td>Type</td>
+                <td>Popis</td>
+            </tr>
+            <tr>
+                <td>input</td>
+                <td>xs:string</td>
+                <td>Výběr zařízení, které bude jako hlavní (klavesnice,myš....)</td>
+            </tr>
+            <tr>
+                <td>sensitivity</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení velikosti sensitivity ve hře</td>
+            </tr>
+            <tr>
+                <td>inverted mouse horizontal</td>
+                <td>xs:boolean</td>
+                <td>Prohození horizontálního pohybu u myši</td>
+            </tr>
+            <tr>
+                <td>inverted mouse vertical</td>
+                <td>xs:boolean</td>
+                <td>Prohození vertikálního pohybu u myši</td>
+            </tr>
+            <tr>
+                <td>Camera Up</td>
+                <td>xs:string</td>
+                <td>Pohyb camery nahoru</td>
+            </tr>
+            <tr>
+                <td>Camera Left</td>
+                <td>xs:string</td>
+                <td>Pohyb camery doleva</td>
+            </tr>
+            <tr>
+                <td>Camera Right</td>
+                <td>xs:string</td>
+                <td>Pohyb camery doprava</td>
+            </tr>
+            <tr>
+                <td>Camera Down</td>
+                <td>xs:string</td>
+                <td>Pohyb camery dolů</td>
+            </tr>
+            <tr>
+                <td>Flare Attack</td>
+                <td>xs:string</td>
+                <td>Taktické zobrazení na mapě pro útok</td>
+            </tr>
+            <tr>
+                <td>Flare Defend</td>
+                <td>xs:string</td>
+                <td>Taktické zobrazení na mapě pro bránění</td>
+            </tr>
+            <tr>
+                <td>Flare Help</td>
+                <td>xs:string</td>
+                <td>Taktické zobrazení na mapě pro pomoc</td>
+            </tr>
+            <tr>
+                <td>Flare Custom message</td>
+                <td>xs:string</td>
+                <td>Taktické zobrazení na mapě pro vlastní zprávu</td>
+            </tr>
+            <tr>
+                <td>Deployment Menu</td>
+                <td>xs:string</td>
+                <td>Zobrazení menu, kdy se vybíráte jednotky</td>
+            </tr>
+            <tr>
+                <td>Unit Information</td>
+                <td>xs:string</td>
+                <td>Informace o označené jednotce</td>
+            </tr>
+            <tr>
+                <td>Action Move Fast</td>
+                <td>xs:string</td>
+                <td>Akce pro rychlejší pohyb jednotky</td>
+            </tr>
+            <tr>
+                <td>Action Attack</td>
+                <td>xs:string</td>
+                <td>Akce pro útok jednotky</td>
+            </tr>
+            <tr>
+                <td>Action Unload At Position</td>
+                <td>xs:string</td>
+                <td>Akce pro vystoupení jednotky z auta po dosažení cíle</td>
+            </tr>
+            <tr>
+                <td>Action Unload</td>
+                <td>xs:string</td>
+                <td>Akce pro vystoupení jednotky z auta na místě</td>
+            </tr>
+            <tr>
+                <td>Action Reverse</td>
+                <td>xs:string</td>
+                <td>Akce pro pohyb zpět(jenom u auta)</td>
+            </tr>
+            <tr>
+                <td>Action Call artillery</td>
+                <td>xs:string</td>
+                <td>Akce pro zavolání dělostřelecké podpory</td>
+            </tr>
+            <tr>
+                <td>Action Fall back</td>
+                <td>xs:string</td>
+                <td>Akce pro ústup</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="audio">
+        <h2>Audio</h2>
+        <p>Nastavení zvuku.</p>
+        <table border="1">
+            <tr>
+                <td>Název</td>
+                <td>Type</td>
+                <td>Popis</td>
+            </tr>
+            <tr>
+                <td>Volume</td>
+                <td>xs:boolean</td>
+                <td>Zapnutí/vypnutí zvuku</td>
+            </tr>
+            <tr>
+                <td>Master Volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení hlasitosti hlavního zvuku</td>
+            </tr>
+            <tr>
+                <td>Music Volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení hlasitosti muziky</td>
+            </tr>
+            <tr>
+                <td>Voice Volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení hlasitosti hlasu postav ve hře</td>
+            </tr>
+            <tr>
+                <td>SFX Volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavené hlasitosti zvuku pro FX a jednotky</td>
+            </tr>
+            <tr>
+                <td>Ambiance Volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení hlasitosti zvuku v pozadí</td>
+            </tr>
+            <tr>
+                <td>speech</td>
+                <td>xs:boolean</td>
+                <td>Nastavené jazyku pro řeč</td>
+            </tr>
+            <tr>
+                <td>subtitles</td>
+                <td>xs:boolean</td>
+                <td>Nastavené jazyku pro titulky</td>
+            </tr>
+            <tr>
+                <td>voice chat</td>
+                <td>xs:boolean</td>
+                <td>Zapnutí/vypnutí mluvení ve hře</td>
+            </tr>
+            <tr>
+                <td>voicechat volume</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení hlasitosti hráče ve hře </td>
+            </tr>
+            <tr>
+                <td>voicechat mode</td>
+                <td>xs:string</td>
+                <td>Výběr aktivace hlasu pro mluvení ve hře</td>
+            </tr>
+            <tr>
+                <td>voicechat microphone sensitivity</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení citlivosti mikrofonu</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="video">
+        <h2>Video</h2>
+        <p>Nastavení Rozhraní obrazovky a kvalitu hry.</p>
+        <table border="1">
+            <tr>
+                <td>Název</td>
+                <td>Type</td>
+                <td>Popis</td>
+            </tr>
+            <tr>
+                <td>Resolution</td>
+                <td>xs:string</td>
+                <td>Velikost Obrazovky</td>
+            </tr>
+            <tr>
+                <td>Window types</td>
+                <td>xs:string</td>
+                <td>Výběr řezimu zobrazení hry</td>
+            </tr>
+            <tr>
+                <td>gamma</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení kvality gammy</td>
+            </tr>
+            <tr>
+                <td>brightness</td>
+                <td>xs:nonNegativeInteger</td>
+                <td>Nastavení kvality jasu</td>
+            </tr>
+            <tr>
+                <td>colorblind mode</td>
+                <td>xs:boolean</td>
+                <td>Povolení/Zakázaní barvoslepý režim</td>
+            </tr>
+            <tr>
+                <td>vertical sync</td>
+                <td>xs:boolean</td>
+                <td>Povolení/Zakázaní vertical synchronizace</td>
+            </tr>
+            <tr>
+                <td>Anti Aliasing</td>
+                <td>xs:string</td>
+                <td>Výběr nebo Zakázaní Anti aliasing</td>
+            </tr>
+            <tr>
+                <td>Render reduction</td>
+                <td>xs:string</td>
+                <td>Nastavení redukce vykreslování</td>
+            </tr>
+            <tr>
+                <td>Shader Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality materiálu objektů</td>
+            </tr>
+            <tr>
+                <td>Texture Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality textury objektů</td>
+            </tr>
+            <tr>
+                <td>Texture Anisotropy</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality filtrování textury</td>
+            </tr>
+            <tr>
+                <td>Shadow texture quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality stínů</td>
+            </tr>
+            <tr>
+                <td>Shadow anti aliasing</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality vykreslování stínů</td>
+            </tr>
+            <tr>
+                <td>Model Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality modelu</td>
+            </tr>
+            <tr>
+                <td>Ground Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality terénu</td>
+            </tr>
+            <tr>
+                <td>Terrain resolution</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality rozlišení terénu</td>
+            </tr>
+            <tr>
+                <td>Water Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality vody</td>
+            </tr>
+            <tr>
+                <td>Imposter texture quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality prostředí na větší zdálenosti</td>
+            </tr>
+            <tr>
+                <td>Dynamic Light Quality</td>
+                <td>xs:string</td>
+                <td>Nastavení kvality dynamického světla</td>
+            </tr>
+            <tr>
+                <td>Motion Blur</td>
+                <td>xs:boolean</td>
+                <td>Povolení/Zakázaní Motion blur</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="zdroje">
+        <h2>Zdroje</h2>
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li>
+                        <a href="http://www.w3schools.com/html/default.asp">Syntaxe</a>
+                    </li>
+
+                    <li>
+                        <a href="https://validator.w3.org/nu/#file">Validace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.freeformatter.com/xml-validator-xsd.html">Validace xml vůči XSD</a>
+            </li>
+            <li>
+                <a href="http://xsd2xml.com/">Generator dat vůči xsd</a>
+            </li>
+            <li>
+                <a href="">Vlastní zkušenosti/materiály z transforamce xml souboru</a>
+            </li>
+        </ul>
+    </section>
+
+</main>
+<footer>
+    &copy; Jiří Šenfeld
+</footer>
+</body>
+</html>

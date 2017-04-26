@@ -1,0 +1,122 @@
+{
+	"Options": {
+		"Gameplay": {
+			"Mouse_Trape": {
+				"_enabled": "true"
+			},
+			"chat": {
+				"_enabled": "true"
+			},
+			"server": "EU",
+			"Language": {
+				"_lang": "English"
+			},
+			"Auto_Save": {
+				"_enabled": "true"
+			}
+		},
+		"Interface": {
+			"Icons_Type": "RTS",
+			"Label_size": "Medium",
+			"Display_Frontline": "Opponent",
+			"HUD_size": "Normal",
+			"Display_Minimap": {
+				"_enabled": "true"
+			},
+			"Show_unit_name": {
+				"_enabled": "true"
+			},
+			"unit_scaling": {
+				"_scale": "1.0"
+			}
+		},
+		"Controls": {
+			"input": "Keyboard and Mouse",
+			"sensitivity": "25",
+			"inverted_mouse": {
+				"_horizontal": "false",
+				"_vertical": "false"
+			},
+			"Camera": {
+				"Up": "W",
+				"Left": "A",
+				"Right": "D",
+				"Down": "S"
+			},
+			"Flare": {
+				"Attack": "F1",
+				"Defend": "F2",
+				"Help": "F3",
+				"Custom_message": "F4"
+			},
+			"Deployment_Menu": ";",
+			"Unit_Information": "I",
+			"Action": {
+				"Move_Fast": "F",
+				"Attack": "Q",
+				"Unload_At_Position": "Z",
+				"Unload": "U",
+				"Reverse": "G",
+				"Call_artillery": "J",
+				"Fall_back": "R"
+			}
+		},
+		"Audio": {
+			"volume": {
+				"Master_Volume": "50",
+				"Music_Volume": "20",
+				"Voice_Volume": "100",
+				"SFX_Volume": "100",
+				"Ambiance_Volume": "50",
+				"_enabled": "true"
+			},
+			"speech": {
+				"_lang": "English"
+			},
+			"subtitles": {
+				"_lang": "English",
+				"_enabled": "true"
+			},
+			"voicechat": {
+				"volume": "50",
+				"mode": "Push-to-talk",
+				"microphone_sensitivity": "33",
+				"_enabled": "true"
+			}
+		},
+		"Video": {
+			"Resolution": "1920x1080",
+			"Window_types": "Full Screen",
+			"gamma": {
+				"_value": "50"
+			},
+			"brightness": {
+				"_value": "50"
+			},
+			"colorblind_mode": {
+				"_enabled": "false"
+			},
+			"vertical_sync": {
+				"_enabled": "true"
+			},
+			"Advance_Video": {
+				"Anti_Aliasing": "TSSAA",
+				"Render_reduction": "No reduction",
+				"Shader_Quality": "High",
+				"Texture_Quality": "High",
+				"Texture_Anisotropy": "2X",
+				"Shadow_texture_quality": "High",
+				"Shadow_anti_aliasing": "Medium",
+				"Model_Quality": "High",
+				"Ground_Quality": "High",
+				"Terrain_resolution": "Medium",
+				"Water_Quality": "High",
+				"Imposter_texture_quality": "Medium",
+				"Dynamic_Light_Quality": "High",
+				"Motion_Blur": {
+					"_enabled": "false"
+				}
+			}
+		}
+	}
+}

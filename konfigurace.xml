@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="konfigurace_schema.xsl"?>
+
+<Options>
+    <Gameplay>
+        <Mouse_Trape enabled="true" />
+        <chat enabled="true" />
+        <server>EU</server>
+        <Language lang="English" />
+        <Auto_Save enabled="true" />
+    </Gameplay>
+    <Interface>
+        <Icons_Type>RTS</Icons_Type>
+        <Label_size>medium</Label_size>
+        <Display_Frontline>Opponent</Display_Frontline>
+        <HUD_size>normal</HUD_size>
+        <Display_Minimap enabled="true" />
+        <Show_unit_name enabled="true" />
+        <unit_scaling scale="1.0" />
+    </Interface>
+    <Controls>
+        <input>Keyboard and Mouse</input>
+        <sensitivity>25</sensitivity>
+        <inverted_mouse horizontal="false" vertical="false" />
+        <Camera>
+            <Up>W</Up>
+            <Left>A</Left>
+            <Right>D</Right>
+            <Down>S</Down>
+        </Camera>
+        <Flare>
+            <Attack>F1</Attack>
+            <Defend>F2</Defend>
+            <Help>F3</Help>
+            <Custom_message>F4</Custom_message>
+        </Flare>
+        <Deployment_Menu>;</Deployment_Menu>
+        <Unit_Information>I</Unit_Information>
+        <Action>
+            <Move_Fast>F</Move_Fast>
+            <Attack>Q</Attack>
+            <Unload_At_Position>Z</Unload_At_Position>
+            <Unload>U</Unload>
+            <Reverse>G</Reverse>
+            <Call_artillery>J</Call_artillery>
+            <Fall_back>R</Fall_back>
+        </Action>
+    </Controls>
+    <Audio>
+        <volume enabled="true">
+            <Master_Volume>50</Master_Volume>
+            <Music_Volume>20</Music_Volume>
+            <Voice_Volume>100</Voice_Volume>
+            <SFX_Volume>100</SFX_Volume>
+            <Ambiance_Volume>50</Ambiance_Volume>
+        </volume>
+        <speech lang="English" />
+        <subtitles lang="English" enabled="true" />
+        <voicechat enabled="true">
+            <volume>50</volume>
+            <mode>Push-to-talk</mode>
+            <microphone_sensitivity>33</microphone_sensitivity>
+        </voicechat>
+    </Audio>
+    <Video>
+        <Resolution>1920x1080</Resolution>
+        <Window_types>Full screen</Window_types>
+        <gamma value="50" />
+        <brightness value="50" />
+        <colorblind_mode enabled="false" />
+        <vertical_sync enabled="true" />
+        <Advance_Video>
+            <Anti_Aliasing>TSSAA</Anti_Aliasing>
+            <Render_reduction>No reduction</Render_reduction>
+            <Shader_Quality>High</Shader_Quality>
+            <Texture_Quality>High</Texture_Quality>
+            <Texture_Anisotropy>2X</Texture_Anisotropy>
+            <Shadow_texture_quality>High</Shadow_texture_quality>
+            <Shadow_anti_aliasing>Medium</Shadow_anti_aliasing>
+            <Model_Quality>High</Model_Quality>
+            <Ground_Quality>High</Ground_Quality>
+            <Terrain_resolution>Medium</Terrain_resolution>
+            <Water_Quality>High</Water_Quality>
+            <Imposter_texture_quality>Medium</Imposter_texture_quality>
+            <Dynamic_Light_Quality>High</Dynamic_Light_Quality>
+            <Motion_Blur enabled="false" />
+        </Advance_Video>
+    </Video>
+</Options>
